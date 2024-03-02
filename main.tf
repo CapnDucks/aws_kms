@@ -1,5 +1,5 @@
 resource "aws_kms_key" "this" {
-  description             = "This key is used to encrypt objects"
+  description             = "This key is used to encrypt and decrypt objects."
   deletion_window_in_days = var.kms_deletion_window
   enable_key_rotation     = true
   multi_region            = var.kms_multi_region
